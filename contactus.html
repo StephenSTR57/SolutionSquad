@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+<script src="https://kit.fontawesome.com/89554d29b9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/all.min.css/">
+
+	<style>
+		form {
+			display: flex;
+			height:70;
+                  width:40;
+			flex-direction: column;
+			align-items: centre;
+                  color:white;
+		}
+		
+		input[type="text"], input[type="email"], textarea {
+			padding: 10px;
+			margin: 10px;
+			border: 2px solid black;
+			border-radius: 4px;
+			width: 50%;
+		}
+		
+		input[type="submit"] {
+			background-color: yellow;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 1.2em;
+                  color:black;
+			margin: 10px;
+			width: 30%;
+		}
+		body{
+		background-image:url("contact.jpeg");
+		background-size:cover;}
+  footer {
+  background-color:transparent;
+  padding: 20px;
+  text-align: center;
+  color:white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+p {
+  margin: 0;
+}
+p{
+font-color:white
+	</style>
+</head>
+<body>
+      <header>
+	<h1 style="color:yellow;">Contact Us</h1>
+      </header>
+	<form action="contactus.php" method="POST">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Your name.." required>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Your email.." required>
+		
+		<label for="subject">Subject:</label>
+		<input type="text" id="subject" name="subject" placeholder="Subject.." required>
+		
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" placeholder="Write something.." required></textarea>
+		
+		<input type="submit" value="Submit">
+	</form>
+<div>
+<p style="color:white;"><i class="fa fa-solid fa-envelope" style="color: #ffffff;"></i>   Email:</p>
+<a href="mailto:stephenthangaraj@gmail.com>
+<p style="color:yellow;">solutionsquad@gmail.com</p></a>
+</div>
+<div>
+<p style="color:white;"><i class="fa fa-solid fa-phone " style="color: #ffffff;"></i>Mobile No:</p>
+<p style="color:white;"><a href="tel:8015011837">8015011837</a></p>
+</div>
+<script src="contactus.js"></script>
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Solution Squad Company. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
